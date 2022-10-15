@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="3" name="firefox(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.osa.tetes.HomePage">
+        <methods>
+          <include name="clickOnForumLoginButton"/>
+          <include name="verifyHomePageTitle" invocation-numbers="0"/>
+          <include name="verifyLogin"/>
+          <include name="closingBrowser"/>
+        </methods>
+      </class> <!-- com.osa.tetes.HomePage -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+  <test thread-count="3" name="chrome(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.osa.tetes.HomePage">
+        <methods>
+          <include name="clickOnForumLoginButton"/>
+          <include name="verifyHomePageTitle" invocation-numbers="0"/>
+          <include name="verifyLogin"/>
+        </methods>
+      </class> <!-- com.osa.tetes.HomePage -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
