@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class MahfuzBranch {
+public class Utilities_Practice {
 	static WebDriver dr;
 
 	public static void main(String[] args) {
